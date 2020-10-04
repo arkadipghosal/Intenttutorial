@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linlayval"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical" >
+
+
+
+            <RelativeLayout
+                android:id="@+id/userlay"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="70dp" >
+
+
+                <EditText
+                    android:id="@+id/etusername"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittextbg"
+
+                    android:layout_centerHorizontal="true"
+
+
+                    android:hint="Enter your name"
+                    android:padding="5dp"
+                    android:singleLine="true"
+
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/loginlay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/senddata"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonbackground"
+
+
+
+                    android:padding="5dp"
+                    android:text="Send data"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/printlay"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp" >
+
+                <TextView
+                    android:id="@+id/printtext"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
